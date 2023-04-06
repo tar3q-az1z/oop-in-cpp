@@ -1,33 +1,33 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class triangle{
+class rectangle{
 	int height, width;
 	public:
 		void setDimension();
-		void compareTri(int area1, triangle toCompare);
+		void compareTri(int area1, rectangle toCompare);
 		int area(){
 			return height * width;
 		}
 };
 
-void triangle::setDimension(){
-	cout << "height of triangle: ";
+void rectangle::setDimension(){
+	cout << "height of rectangle: ";
 	cin >> height;
-	cout << "width of triangle: ";
+	cout << "width of rectangle: ";
 	cin >> width;
 	cout << "-------------------------" << endl;
 }
 
-void triangle::compareTri(int area1, triangle toCompare){
+void rectangle::compareTri(int area1, rectangle toCompare){
 	int area2 = toCompare.area();
-	if(area1 > area2) cout << "first triangle is bigger." << endl;
-	else if(area1 == area2) cout << "both triangle are of same area." << endl;
-	else cout << "second triangle is bigger." << endl;
+	if(area1 > area2) cout << "first rectangle is bigger." << endl;
+	else if(area1 == area2) cout << "both rectangle are of same area." << endl;
+	else cout << "second rectangle is bigger." << endl;
 }
 
 int main(void){
-	triangle first, second;
+	rectangle first, second;
 	first.setDimension();
 	second.setDimension();
 	first.compareTri(first.area(), second);

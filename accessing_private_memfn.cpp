@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class triangle{
+class rectangle{
 	int height, width;
 	void set(){
 		cout << "height: ";
@@ -13,13 +13,13 @@ class triangle{
 		int area();
 };
 
-int triangle::area(){
+int rectangle::area(){
 	set();
 	return height * width;
 }
 
 int main(void){
-	triangle trg;
+	rectangle trg;
 	cout << "area: " << trg.area() << " sq. unit"<< endl;	
 	return 0;
 }

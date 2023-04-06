@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class triangle{
+class rectangle{
 	int height, width;
 	public:
 		void set(int height, int width);
@@ -12,13 +12,13 @@ class triangle{
 		}
 };
 
-void triangle::set(int height, int width){
+void rectangle::set(int height, int width){
 	this->height = height;
 	this->width = width;
 }
 
 int main(void){
-	triangle trg;
+	rectangle trg;
 	trg.set(30, 15);
 	trg.print();
 	return 0;
